@@ -169,7 +169,7 @@ Ajouter :
 - URL source
 - Date de vérification
 - Commentaires
-- Décision (optionnel mais recommandé)
+- Décision
 ________________________________________
 11. Commentaires (standardisation)
 Exemples :
@@ -247,9 +247,9 @@ for nom_fichier in fichiers:
         Génère ta réponse directement sous forme de lignes CSV valides (avec point-virgule comme séparateur).
         Pour le réponse, je ne veux pas de texte (tu ne dois rien inventer).
         Ne mets pas de texte d'explication avant ou après, fournis uniquement le contenu CSV brut.
-        Déterminer si la SAE existe encore en ajoutant les colonnes: (conserver colonnes existantes) :
+        Conserver les colonnes existantes.
+        Déterminer si la SAE existe encore en ajoutant les colonnes suivantes :
         - Existence actuelle (Oui / Non / Incertain (exemple si sources insuffisantes, ou si tu ne sais pas)). La colonne la plus importante.
-        Et si possible :
         - Fiabilité
         - Nature des dimensions (Publiées / Estimées)
         - Club utilisateur
@@ -259,7 +259,9 @@ for nom_fichier in fichiers:
         - URL source
         - Date de vérification
         - Commentaires
-        - Décision (optionnel mais recommandé)
+        - Décision
+        Si tu ne trouves pas d'information fiable à indiquer dans les nouvelles colonnes, indique "Non trouvé" pour la colonne correspondante (pour ne pas avoir de valeurs vides).
+        Attention : je ne veux de décalage des colonnes existantes, ni de suppression de colonnes. Tu dois uniquement compléter les nouvelles colonnes demandées sans décalage.
         """
 
         analyse_gemini = None
